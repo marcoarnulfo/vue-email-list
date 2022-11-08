@@ -18,9 +18,8 @@
         <div>
             {{mails.length}}
         </div>
-        <ul v-for="mail in mails">
-            <li v-if="mails.length < 10"></li>
-            <li v-else>{{mail}}</li>
+        <ul v-if="mails.length === 10">
+            <li v-for="mail in mails"> {{mail}} </li>
         </ul>
     </div>
 
